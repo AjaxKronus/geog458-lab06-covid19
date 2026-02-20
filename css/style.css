@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', serif;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#info {
+    z-index: 1000;
+    position: absolute;
+    width: 320px;
+    top: 1%;
+    bottom: 1%;
+    left: 0.5%;
+    padding: 20px 15px 20px 15px;
+    background: #343a40;
+    color: white;
+    overflow-y: auto;
+    border-radius: 5px;
+}
+
+#info a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+#info a:hover {
+    color: white;
+    opacity: 0.8;
+}
+
+#title {
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+#desc {
+    text-align: center;
+    color: lightgray;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#covid-count {
+    margin: 0;
+    text-align: center;
+    color: orange;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#chart-title,
+#bar-title {
+    color: lightgray;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 14px;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+#covid-chart,
+#bar-chart {
+    margin-top: 5px;
+}
+
+#footer {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 160%;
+    color: lightgray;
+}
+
+/* Reset button */
+#reset {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    padding: 8px 14px;
+    background: #343a40;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+#reset:hover {
+    background: #555;
+}
+
+/* Legend */
+#legend {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    z-index: 1000;
+    width: 150px;
+    background: rgba(255,255,255,0.92);
+    padding: 10px 14px;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+#legend h4 {
+    margin: 0 0 8px 0;
+    font-size: 13px;
+}
+
+.legend-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.legend-color {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    border-radius: 2px;
+    opacity: 0.85;
+}
+
+/* C3 chart text colors for dark background */
+text {
+    fill: lightgray;
+}
+
+.tick line {
+    stroke: gray;
+}
+
+.c3-axis path {
+    stroke: gray;
+}
