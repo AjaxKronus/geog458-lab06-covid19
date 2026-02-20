@@ -16,7 +16,7 @@ map.addControl(new mapboxgl.NavigationControl(), 'bottom-right');
 // Constants 
 // Load directly from GitHub raw — no local file needed
 const GEOJSON_URL =
-    'https://raw.githubusercontent.com/spatial-data-lab/data/ba06af5e48b8fc656bacc3658e4f033c93e81e3b/us-state-Covid-19-cases.geojson';
+    'https://opendata.arcgis.com/datasets/628578697fb24d8ea4c32fa0c5ae1843_0.geojson';
 const LATEST_DATE = '2022-06-06';
 
 // Sample of dates for the time-series line chart
