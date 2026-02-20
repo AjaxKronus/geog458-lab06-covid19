@@ -21,37 +21,30 @@
     <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
+
 <div id="map"></div>
 
 <div id="info">
-    <div id="title">
-        US COVID-19 Cases by State
-        <span>
-            <a href="https://github.com" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-        </span>
-    </div>
+    <div id="title">🦠 US COVID-19 Dashboard</div>
 
-    <p id="desc">Total cases in the current view:</p>
-    <p id="covid-count">0</p>
+    <p id="desc">Total cases in current view:</p>
+    <p id="covid-count">Loading...</p>
 
-    <div id="chart-title">Cases Over Time (selected state)</div>
-    <div id="covid-chart"></div>
-
-    <div id="bar-title">States by Case Level</div>
+    <div class="chart-label">📊 States by Case Level</div>
     <div id="bar-chart"></div>
+
+    <div class="chart-label">📈 Cases Over Time (click a state)</div>
+    <div id="covid-chart"></div>
 
     <div id="footer">
         <strong>Data Sources:</strong><br />
-        COVID-19 case data: <a href="https://github.com/spatial-data-lab/data" target="_blank">Spatial Data Lab</a><br />
-        Map tiles: <a href="https://www.mapbox.com/" target="_blank">Mapbox</a>
+        COVID data: <a href="https://github.com/spatial-data-lab/data" target="_blank">Spatial Data Lab</a><br />
+        Basemap: <a href="https://www.mapbox.com/" target="_blank">Mapbox</a>
     </div>
 </div>
 
 <div id="legend"></div>
-
-<button id="reset">Reset</button>
+<button id="reset">↺ Reset</button>
 
 <script src="js/main.js"></script>
 </body>
